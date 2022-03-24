@@ -22,13 +22,13 @@ public class User {
 		return Userservice.getMarks() / Userservice.getTotalData();
 	}
 
-	public String Login(String uname, String pass) {
-		return Userservice.UserLogin(uname, pass);
+	public String Login(String uname, String password) {
+		return Userservice.UserLogin(uname, password);
 
 	}
 
-	public String SignUp() {
-		return Userservice.UserSignUp();
+	public String SignUp(String username, String email,String password,String gender,int age,String ID) {
+		return Userservice.UserSignUp(username,email, password,gender,age,ID);
 
 	}
 
